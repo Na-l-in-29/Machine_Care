@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictive Maintenance Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="graph.html">Dashboard</a>
+            <a href="reports.html">Reports</a>
+            <a href="help.html">Help</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Predictive Maintenance Dashboard</h1>
+
+        <div class="sensors">
+            <!-- Sound -->
+            <div class="sensor">
+                <div class="circle">
+                    <div id="soundFill" class="fill"></div>
+                </div>
+                <div class="sensor-label">Sound</div>
+                <div id="soundValue" class="sensor-value">0</div>
+            </div>
+
+            <!-- Current -->
+            <div class="sensor">
+                <div class="circle">
+                    <div id="currentFill" class="fill"></div>
+                </div>
+                <div class="sensor-label">Current</div>
+                <div id="currentValue" class="sensor-value">0</div>
+            </div>
+
+            <!-- Temperature -->
+            <div class="sensor">
+                <div class="circle">
+                    <div id="temperatureFill" class="fill"></div>
+                </div>
+                <div class="sensor-label">Temperature</div>
+                <div id="temperatureValue" class="sensor-value">0</div>
+            </div>
+
+            <!-- Vibration -->
+            <div class="sensor">
+                <div class="circle">
+                    <div id="vibrationFill" class="fill"></div>
+                </div>
+                <div class="sensor-label">Vibration</div>
+                <div id="vibrationValue" class="sensor-value">0</div>
+            </div>
+        </div>
+
+        <div id="alert" class="hidden">⚠️ Warning: Threshold breached!</div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
